@@ -8,11 +8,11 @@ clear inputs
 % These CAN BE VARIED AND SHOULD BE OPTIMIZED 
 % (they can have multiple values given as vectors, e.g. [0.01 0.02]).
 % Patch size of the first uniform-size cover:
-inputs.PatchDiam1 = [0.08 0.12]; 
+inputs.PatchDiam1 = [0.01 0.5]; 
 % Minimum patch size of the cover sets in the second cover:
-inputs.PatchDiam2Min = [0.02 0.03]; 
+inputs.PatchDiam2Min = [0.01 0.3]; 
 % Maximum cover set size in the stem's base in the second cover:
-inputs.PatchDiam2Max = [0.07 0.1]; 
+inputs.PatchDiam2Max = [0.02 0.6]; 
 
 % ADDITIONAL PATCH GENERATION PARAMETERS.
 % The following parameters CAN BE VARIED BUT CAN BE USUALLY KEPT AS SHOWN 
@@ -24,14 +24,14 @@ inputs.BallRad2 = inputs.PatchDiam2Max+0.01;
 
 % The following parameters CAN BE USUALLY KEPT FIXED as shown.
 % Minimum number of points in BallRad1-balls, generally good value is 3:
-inputs.nmin1 = 3; 
+inputs.nmin1 = 2; 
 % Minimum number of points in BallRad2-balls, generally good value is 1:
 inputs.nmin2 = 1; 
 % Does the point cloud contain points only from the tree (if 1, then yes):
 inputs.OnlyTree = 1; 
 % Produce a triangulation of the stem's bottom part up to the first main
 % branch (if 1, then yes):
-inputs.Tria = 1; 
+inputs.Tria = 0; 
 % Compute the point-model distances (if 1, then yes):
 inputs.Dist = 1; 
 
