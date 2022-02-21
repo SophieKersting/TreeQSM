@@ -8,11 +8,11 @@ clear inputs
 % These CAN BE VARIED AND SHOULD BE OPTIMIZED 
 % (they can have multiple values given as vectors, e.g. [0.01 0.02]).
 % Patch size of the first uniform-size cover:
-inputs.PatchDiam1 = [0.01 0.5]; 
+inputs.PatchDiam1 = [0.001 0.005]; 
 % Minimum patch size of the cover sets in the second cover:
-inputs.PatchDiam2Min = [0.01 0.3]; 
+inputs.PatchDiam2Min = [0.001 0.003]; 
 % Maximum cover set size in the stem's base in the second cover:
-inputs.PatchDiam2Max = [0.02 0.6]; 
+inputs.PatchDiam2Max = [0.002 0.006]; 
 
 % ADDITIONAL PATCH GENERATION PARAMETERS.
 % The following parameters CAN BE VARIED BUT CAN BE USUALLY KEPT AS SHOWN 
