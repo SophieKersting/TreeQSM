@@ -8,23 +8,23 @@ clear inputs
 % These CAN BE VARIED AND SHOULD BE OPTIMIZED 
 % (they can have multiple values given as vectors, e.g. [0.01 0.02]).
 % Patch size of the first uniform-size cover:
-inputs.PatchDiam1 = [0.001 0.005]; 
+inputs.PatchDiam1 =  0.0075; % beech 0.0075 %= [0.005 0.0075 0.01];
 % Minimum patch size of the cover sets in the second cover:
-inputs.PatchDiam2Min = [0.001 0.003]; 
+inputs.PatchDiam2Min = 0.001; % beech 0.001 %=[0.0005 0.001 0.0015 0.002];
 % Maximum cover set size in the stem's base in the second cover:
-inputs.PatchDiam2Max = [0.002 0.006]; 
+inputs.PatchDiam2Max = 0.0055; % beech [0.005 0.0075];
 
 % ADDITIONAL PATCH GENERATION PARAMETERS.
 % The following parameters CAN BE VARIED BUT CAN BE USUALLY KEPT AS SHOWN 
 % (i.e. little bigger than PatchDiam parameters).
 % Ball radius in the first uniform-size cover generation:
-inputs.BallRad1 = inputs.PatchDiam1+0.015; 
+inputs.BallRad1 = inputs.PatchDiam1+0.002; % beech 0.002
 % Maximum ball radius in the second cover generation:
-inputs.BallRad2 = inputs.PatchDiam2Max+0.01; 
+inputs.BallRad2 = inputs.PatchDiam2Max+0.0015; % beech 0.001
 
 % The following parameters CAN BE USUALLY KEPT FIXED as shown.
 % Minimum number of points in BallRad1-balls, generally good value is 3:
-inputs.nmin1 = 2; 
+inputs.nmin1 = 1; 
 % Minimum number of points in BallRad2-balls, generally good value is 1:
 inputs.nmin2 = 1; 
 % Does the point cloud contain points only from the tree (if 1, then yes):
@@ -74,7 +74,7 @@ inputs.savetxt = 0;
 % 2 = plots the QSM, the segmentated point cloud and distributions, 
 % 1 = plots the QSM and the segmentated point cloud
 % 0 = plots nothing
-inputs.plot = 2; 
+inputs.plot = 1; 
 % What are displayed during the reconstruction: 2 = display all; 
 % 1 = display name, parameters and distances; 0 = display only the name:
-inputs.disp = 2; 
+inputs.disp = 1; 
