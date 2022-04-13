@@ -8,19 +8,19 @@ clear inputs
 % These CAN BE VARIED AND SHOULD BE OPTIMIZED 
 % (they can have multiple values given as vectors, e.g. [0.01 0.02]).
 % Patch size of the first uniform-size cover:
-inputs.PatchDiam1 =  0.0075; % beech 0.0075 %= [0.005 0.0075 0.01];
+inputs.PatchDiam1 =  0.0015; % beech 0.0075 % root 0.0015
 % Minimum patch size of the cover sets in the second cover:
-inputs.PatchDiam2Min = 0.001; % beech 0.001 %=[0.0005 0.001 0.0015 0.002];
+inputs.PatchDiam2Min = 0.001; % beech 0.001 % root 0.001
 % Maximum cover set size in the stem's base in the second cover:
-inputs.PatchDiam2Max = 0.0055; % beech [0.005 0.0075];
+inputs.PatchDiam2Max = 0.002; % beech [0.005 0.0075]; % root 0.002
 
 % ADDITIONAL PATCH GENERATION PARAMETERS.
 % The following parameters CAN BE VARIED BUT CAN BE USUALLY KEPT AS SHOWN 
 % (i.e. little bigger than PatchDiam parameters).
 % Ball radius in the first uniform-size cover generation:
-inputs.BallRad1 = inputs.PatchDiam1+0.002; % beech 0.002
+inputs.BallRad1 = inputs.PatchDiam1+0.0018; % beech 0.002 % root 0.0018
 % Maximum ball radius in the second cover generation:
-inputs.BallRad2 = inputs.PatchDiam2Max+0.0015; % beech 0.001
+inputs.BallRad2 = inputs.PatchDiam2Max+0.0005; % beech 0.001(5) % root 0.0005
 
 % The following parameters CAN BE USUALLY KEPT FIXED as shown.
 % Minimum number of points in BallRad1-balls, generally good value is 3:
@@ -59,7 +59,7 @@ inputs.GrowthVolFac = 2.5;
 % These parameters don't affect the QSM-reconstruction but define what is
 % saved, plotted, and displayed and how the models are named/indexed
 % Name string for saving output files and naming models:
-inputs.name = 'tree'; 
+inputs.name = 'root'; 
 % Tree index. If modelling multiple trees, then they can be indexed uniquely:
 inputs.tree = 1;
 % Model index, can separate models if multiple models with the same inputs:
