@@ -10,9 +10,9 @@ clear inputs
 % Patch size of the first uniform-size cover:
 inputs.PatchDiam1 =  0.0015; % beech 0.0075 % root 0.0015
 % Minimum patch size of the cover sets in the second cover:
-inputs.PatchDiam2Min = 0.001; % beech 0.001 % root 0.001
+inputs.PatchDiam2Min = 0.002; % beech 0.001 % root 0.001
 % Maximum cover set size in the stem's base in the second cover:
-inputs.PatchDiam2Max = 0.002; % beech [0.005 0.0075]; % root 0.002
+inputs.PatchDiam2Max = 0.004; % beech [0.005 0.0075]; % root 0.002
 
 % ADDITIONAL PATCH GENERATION PARAMETERS.
 % The following parameters CAN BE VARIED BUT CAN BE USUALLY KEPT AS SHOWN 
@@ -59,7 +59,7 @@ inputs.GrowthVolFac = 2.5;
 % These parameters don't affect the QSM-reconstruction but define what is
 % saved, plotted, and displayed and how the models are named/indexed
 % Name string for saving output files and naming models:
-inputs.name = 'root'; 
+inputs.name = 'rootNo02'; 
 % Tree index. If modelling multiple trees, then they can be indexed uniquely:
 inputs.tree = 1;
 % Model index, can separate models if multiple models with the same inputs:
