@@ -59,7 +59,7 @@ inputs.GrowthVolFac = 2.5;
 % These parameters don't affect the QSM-reconstruction but define what is
 % saved, plotted, and displayed and how the models are named/indexed
 % Name string for saving output files and naming models:
-inputs.name = 'rootNo20'; 
+inputs.name = 'rootNo20test'; 
 % Tree index. If modelling multiple trees, then they can be indexed uniquely:
 inputs.tree = 1;
 % Model index, can separate models if multiple models with the same inputs:
